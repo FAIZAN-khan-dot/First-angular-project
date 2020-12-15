@@ -4,13 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { jqxPivotGridModule } from 'jqwidgets-ng/jqxpivotgrid';
+import { jqxPivotDesignerModule } from 'jqwidgets-ng/jqxpivotdesigner';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+     jqxPivotDesignerModule, jqxPivotGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
